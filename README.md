@@ -5,6 +5,6 @@ CGraphIndex is an entropy-compressed self-index for labeled property multidigrap
 [1] Hongwei Huo, Zongtao He, and Jeffrey S. Vitter,  Indexing Labeled Property Multidigraphs in Entropy Space, with Applications,  June 13, 2023.  [PDF]     
 
 ## References
-[2] L. Page, S. Brin, R. Motwani and T. Winograd, The PageRank Citation Ranking : Bringing Order to the Web, In The Web Conference, 1999. [PDF]{https://api.semanticscholar.org/CorpusID:1508503}
+[2] L. Page, S. Brin, R. Motwani and T. Winograd, The PageRank Citation Ranking : Bringing Order to the Web, In The Web Conference, 1999. [PDF](https://api.semanticscholar.org/CorpusID:1508503)
 [3] O. Erling, A. Averbuch, J. Larriba-Pey, et al., The LDBC Social Network Benchmark: Interactive Workload, In SIGMOD, pp. 619--630, 2015. [PDF](https://doi.org/10.1145/2723372.2742786)     
 [4] G. Szarnyas, J. Waudby, B.A. Steer, et al., The LDBC Social Network Benchmark: Business Intelligence Workload, In PVLDB, pp. 877--890, 2022. [PDF](https://doi.org/10.14778/3574245.3574270)
