@@ -41,6 +41,9 @@ where
 **Objdir** is the directory where the preprocessed/generated files are stored; and     
 **Cutsize** indicates the partition size for the vertex/edge property text in gigabytes.
 
+After running create_init, some files are generated in the specified directory, inclusing **TmpAdjTable**, a temporary adjacency list file that is used to build
+a compressed adjacency list later.
+
 > ### Creating Compressed Adjacency List Structures, gStruct/gInStruct
 The executable file **create_adjlist** is used to build the compressed adjacency lists **gStruct/gInStruct**, whose input is **TmpAdjTable**, the generated file in the preprocessing. The code files involved are **AdjList.h** and **AdjList.cpp**, and the related function file is **create_adjlist.cpp**.
 Compile and generate the executable file **create_adjlist**.
