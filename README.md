@@ -17,6 +17,14 @@ under this directory, where the important folders include:
 * ./res/ : This folder stores test cases for various query problems; and
 * ./social\_network/ : This folder stores the LDBC raw datasets.
 
+## Compile
+The makefile file has been created which contains a set of tasks to be executed
+for the compilation process of CGraphIndex.   
+Enter the command
+make   
+from the command line in the CGraphIndex directory to do the compilation and to generate four executable files: create_init,  create_adjlist, create_index, and do_search, each of which is described in the follwoing.
+
+
 ## Paper
 [1] Hongwei Huo, Zongtao He, and Jeffrey S. Vitter,  Indexing Labeled Property Multidigraphs in Entropy Space, with Applications,  June 13, 2023.      
 
