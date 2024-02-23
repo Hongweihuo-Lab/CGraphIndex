@@ -31,8 +31,8 @@ from the command line in the CGraphIndex directory to do the compilation and to 
 The executable file **create_init** is used to preprocess the LDBC dataset. The process reorganizes the LDBC dataset to generate graph structure information,
 vertex property text, and edge property text. The primary code files include **InputInit.h** and **InputInit.cpp**, and the related file is **create_init.cpp**.
 
-Enter the command
-
+Enter the command   
+ .create\_init Datadir  Objdir Cutsize
 
 ## Paper
 [1] Hongwei Huo, Zongtao He, and Jeffrey S. Vitter,  Indexing Labeled Property Multidigraphs in Entropy Space, with Applications,  June 13, 2023.      
