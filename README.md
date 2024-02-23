@@ -11,4 +11,4 @@ We use parallel external memory suffix array construction [5] to build the suffi
 [2] L. Page, S. Brin, R. Motwani and T. Winograd, The PageRank Citation Ranking : Bringing Order to the Web, In The Web Conference, 1999. [PDF](https://api.semanticscholar.org/CorpusID:1508503)
 [3] O. Erling, A. Averbuch, J. Larriba-Pey, et al., The LDBC Social Network Benchmark: Interactive Workload, In SIGMOD, pp. 619-630, 2015. [PDF](https://doi.org/10.1145/2723372.2742786)     
 [4] G. Szarnyas, J. Waudby, B.A. Steer, et al., The LDBC Social Network Benchmark: Business Intelligence Workload, In PVLDB, pp. 877-890, 2022. [PDF](https://doi.org/10.14778/3574245.3574270)  
-[5] J. K{\"a}rkk{\"a}inen, D. Kempa, and S. J. Puglisi, Parallel External Memory Suffix Sorting, In CPM, pp. 329-342, 2015. [PDF](https://doi.org/10.1007/978-3-319-19929-0_28)
+[5] J. K"arkk"ainen, D. Kempa, and S. J. Puglisi, Parallel External Memory Suffix Sorting, In CPM, pp. 329-342, 2015. [PDF](https://doi.org/10.1007/978-3-319-19929-0_28)
