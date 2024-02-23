@@ -36,7 +36,12 @@ Enter the command
  **.create\_init Datadir  Objdir Cutsize**   
  
 from the command line to execute the preprocessing process,
-where **Datadir** is the directory where the LDBC raw datasets are stored; 
+where 
+
+**Datadir** is the directory where the LDBC raw datasets are stored; 
+**Objdir** is the directory where the preprocessed/generated files are stored; and   
+**Cutsize** indicates the partition size for the vertex/edge property text in gigabytes.
+
 
 ## Paper
 [1] Hongwei Huo, Zongtao He, and Jeffrey S. Vitter,  Indexing Labeled Property Multidigraphs in Entropy Space, with Applications,  June 13, 2023.      
