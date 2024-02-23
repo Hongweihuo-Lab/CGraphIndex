@@ -41,7 +41,7 @@ where
 **Objdir** is the directory where the preprocessed/generated files are stored; and     
 **Cutsize** indicates the partition size for the vertex/edge property text in gigabytes.
 
-After running **create_init**, some files are generated in the specified directory, inclusing **TmpAdjTable**, a temporary adjacency list file that is used to build
+After running **create_init**, some files are generated in the specified directory, including **TmpAdjTable**, a temporary adjacency list file that is used to build
 a compressed adjacency list later.
 
 > ### Creating Compressed Adjacency List Structures, gStruct/gInStruct
