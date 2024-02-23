@@ -95,19 +95,15 @@ The redirected **AAARES** is used to temporarily save the specific output of the
 
 | MOD| Query |
 | --- | --- |
-|14 |  BFS |                              
-|build FILENAME [BLOCK_SIZE] [SAMPLE_STEP]| Index construction                                
-|c [NUM] |   Number of times to execute the count query, 5000 by default                            
-|l [NUM] |   Number of times to execute the locate query, 5000 by default                         
-|e [NUM] |   Number of times to execute the extract query, 5000 by default                         
-|a     |    Show all test                             
-|C PP  |    Count the number of occurrences of pattern PP in the input file                        
-|L PP  |    Find all occ occurring positions of pattern PP in the input file                        
-|E START LEN|   Extract the text substring from START to START+LEN-1 in the input file                   
-|s  |    Size of the GeCSA                         
-|r  |    Compression ratio                           
-|exit |  Exit 
-
+| 14 |  BFS | 
+| 15 | PageRank |
+| 3 | kHopFriends |
+| 4 | IC1 |
+| 6 | IC5 |
+| 8 | IC13 |
+| 11 | BI3 |
+| 12 | BI10 |
+| 13 | BI16 |
 
 
 > ### Batch Testing
