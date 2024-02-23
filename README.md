@@ -71,7 +71,7 @@ where
 **blockSize** is the block size for the $\Phi$ structure;   
 **Samplesize** is the suffix array/inverse suffix array sampling step;   
 **Objdir** is the directory where the generated indexes are stored; and   
-**srcfile1 srcfile2 srcfile3 ...** are multiple parameters, which represents the texts that need to be created into compressed indexes using **GeCSA**.  
+**srcfile1 srcfile2 srcfile3 ...** are multiple parameters, which represent the texts that need to be created into compressed indexes using **GeCSA**.  
 
 After running, there are index files generated in the directory /home/hzt/data/LDBCxx/ BvGraph/, in which all the index files have a suffix **.geindex**.
 
