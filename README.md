@@ -21,7 +21,9 @@ under this directory, where the important folders include:
 The makefile file has been created which contains a set of tasks to be executed
 for the compilation process of CGraphIndex.   
 Enter the command
+
 make   
+
 from the command line in the CGraphIndex directory to do the compilation and to generate four executable files: create_init,  create_adjlist, create_index, and do_search, each of which is described in the follwoing.
 
 
