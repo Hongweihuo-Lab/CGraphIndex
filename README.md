@@ -7,10 +7,10 @@ and two 3.84TB NVMe SSDs in RAID0 configuration. The OS used was Ubuntu 20.04, 6
 
 ## Related Directories
 
-### Code for CGraphIndex
+> ### Code for CGraphIndex
 The code for CGraphIndex is stored in the directory /home/hzt/code.
 
-### LDBC date sets
+> ### LDBC date sets
 The directory /home/hzt/data/ \ is the directory for the LDBC Datasets. There are also several folders in the LDBCxx directory (/home/hzt/data/LDBCxx)
 under this directory, where the important folders include:
 - ./BvGraph/ : This folder stores the index files of CGraphIndex;
