@@ -41,8 +41,7 @@ where
 **Objdir** is the directory where the preprocessed/generated files are stored; and     
 **Cutsize** indicates the partition size for the vertex/edge property text in gigabytes.
 
-The partition size for the property text is **50** in GB  (since the peak memory for building **GeCSA** is about~18 times the input text size
-on the machine setting described in environment section).
+The partition size for the property text is **50** in GB for the available memory described in environment section, since the peak memory for building **GeCSA** is about~18 times the input text size.
 
 After running **create_init**, some files are generated in the specified directory, including **TmpAdjTable**, a temporary adjacency list file that is used to build
 a compressed adjacency list later.
