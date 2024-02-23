@@ -75,6 +75,15 @@ where
 
 After running, there are index files generated in the directory /home/hzt/data/LDBCxx/ BvGraph/, in which all the index files have a suffix **.geindex**.
 
+> ### Query Processing
+The executable file **do_search** is used for batch testing of **CGraphIndex**. The primary code files involved are **Graph.h** and **Graph.cpp**, and the related function file is **do_search.cpp**. Compile and generate an executable file **do_search**.
+The relevant query interfaces provided by **CGraphIndex** are all in **Graph.h**, which also has relevant comments, and if you want to perform 
+real-time queries and other operations, you can write your own main function to run. 
+Here the **do\_search** is only for batch testing.
+
+Enter the command
+
+
 ## Paper
 [1] Hongwei Huo, Zongtao He, and Jeffrey S. Vitter,  Indexing Labeled Property Multidigraphs in Entropy Space, with Applications,  June 13, 2023.      
 
