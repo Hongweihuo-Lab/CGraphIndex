@@ -10,7 +10,8 @@ We use parallel external memory suffix array construction [5] to build the suffi
 The code for CGraphIndex is stored in the directory /home/hzt/code.
 
 ### LDBC date sets
-
+The directory /home/hzt/data/ \ is the directory for the LDBC Datasets. There are also several folders in the LDBCxx directory (/home/hzt/data/LDBCxx)
+under this directory, the important folders of which include:
 
 
 ## Paper
