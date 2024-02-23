@@ -44,7 +44,7 @@ where
 After running **create_init**, some files are generated in the specified directory, including **TmpAdjTable**, a temporary adjacency list file that is used to build
 a compressed adjacency list later.
 
-> ### Creating Compressed Adjacency List Structures, gStruct/gInStruct
+> ### Creating Compressed Adjacency List Structures
 The executable file **create_adjlist** is used to build the compressed adjacency lists **gStruct/gInStruct**, whose input is **TmpAdjTable**, the generated file in the preprocessing. The code files involved are **AdjList.h** and **AdjList.cpp**, and the related function file is **create_adjlist.cpp**.
 Compile and generate the executable file **create_adjlist**.
 
@@ -59,7 +59,7 @@ where
 
 Afrer running, some files, including **AdjList.myg** are generated in the specified directory.
 
-> ### Building Index Structures, VIndex/RIndex
+> ### Building Self-indexes
 The executable file **create_index** is used to build the compressed self-indexes using **GeCSA**. The code files involved are **CSA.h** and **CSA.cpp**, and the related main function file is **create_index.cpp**. Compile and generate the executable file **create_index**.
 
 Enter the command
