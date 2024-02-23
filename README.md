@@ -13,9 +13,9 @@ and two 3.84TB NVMe SSDs in RAID0 configuration. The OS used was Ubuntu 20.04, 6
 > ### LDBC date sets
 The directory /home/hzt/data/ \ is the directory for the LDBC Datasets. There are also several folders in the LDBCxx directory (/home/hzt/data/LDBCxx)
 under this directory, where the important folders include:
-- ./BvGraph/ : This folder stores the index files of CGraphIndex;
-- ./res/ : This folder stores test cases for various query problems; and
-- ./social\_network/ : This folder stores the LDBC raw datasets.
+* ./BvGraph/ : This folder stores the index files of CGraphIndex;
+* ./res/ : This folder stores test cases for various query problems; and
+* ./social\_network/ : This folder stores the LDBC raw datasets.
 
 ## Compile
 The makefile file has been created which contains a set of tasks to be executed
@@ -36,7 +36,7 @@ Enter the command
  **.create\_init Datadir  Objdir Cutsize**   
  
 from the command line to execute the preprocessing process,
-where 
+where **Datadir** is the directory where the LDBC raw datasets are stored; 
 
 ## Paper
 [1] Hongwei Huo, Zongtao He, and Jeffrey S. Vitter,  Indexing Labeled Property Multidigraphs in Entropy Space, with Applications,  June 13, 2023.      
