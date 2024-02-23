@@ -11,11 +11,11 @@ and two 3.84TB NVMe SSDs in RAID0 configuration. The OS used was Ubuntu 20.04, 6
  The code for CGraphIndex is stored in the directory /home/hzt/code.
 
 > ### LDBC date sets
-The directory /home/hzt/data/ \ is the directory for the LDBC Datasets. There are also several folders in the LDBCxx directory (/home/hzt/data/LDBCxx)
+The directory /home/hzt/data/  is the directory for the LDBC Datasets. There are also several folders in the LDBCxx directory (/home/hzt/data/LDBCxx)
 under this directory, where the important folders include:
 * ./BvGraph/ : This folder stores the index files of CGraphIndex;
 * ./res/ : This folder stores test cases for various query problems; and
-* ./social\_network/ : This folder stores the LDBC raw datasets.
+* ./social_network/ : This folder stores the LDBC raw datasets.
 
 ## Compile
 The makefile file has been created which contains a set of tasks to be executed
@@ -33,7 +33,7 @@ vertex property text, and edge property text. The primary code files include **I
 
 Enter the command   
 
- **.create\_init Datadir  Objdir Cutsize**   
+ **.create_init Datadir Objdir Cutsize**   
  
 from the command line to execute the preprocessing process,     
 where     
@@ -42,12 +42,12 @@ where
 **Cutsize** indicates the partition size for the vertex/edge property text in gigabytes.
 
 > ### Creating Compressed Adjacency List Structures, gStruct/gInStruct
-The executable file **create\_adjlist** is used to build the compressed adjacency lists **gStruct/gInStruct**}, whose input is **TmpAdjTable**, the generated file in the preprocessing. The code files involved are **AdjList.h** and **AdjList.cpp**, and the related function file is **create_adjlist.cpp**.
+The executable file **create_adjlist** is used to build the compressed adjacency lists **gStruct/gInStruct**, whose input is **TmpAdjTable**, the generated file in the preprocessing. The code files involved are **AdjList.h** and **AdjList.cpp**, and the related function file is **create_adjlist.cpp**.
 Compile and generate the executable file **create_adjlist**.
 
 Enter the command
 
-
+**./create\_adjlist TmpAdjTabledir Objdir**
 
 ## Paper
 [1] Hongwei Huo, Zongtao He, and Jeffrey S. Vitter,  Indexing Labeled Property Multidigraphs in Entropy Space, with Applications,  June 13, 2023.      
