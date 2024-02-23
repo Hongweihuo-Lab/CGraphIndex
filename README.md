@@ -81,7 +81,27 @@ The relevant query interfaces provided by **CGraphIndex** are all in **Graph.h**
 real-time queries and other operations, you can write your own main function to run. 
 Here the **do\_search** is only for batch testing.
 
-Enter the command
+Enter the command   
+
+**./do_search indexdir mod testcasefile searchtimefile > AAARES**
+
+from the command line,   
+where    
+**indexdir** indicates the directory where the index files for **CGraphIndex** are stored;    
+**mod** is the specific query problems, see the Table below for batch testing;    
+**testcasefile** is the specific directory for the test cases;    
+**searchtimefile** indicates which file the timing of the query is stored in; and    
+The redirected **AAARES** is used to temporarily save the specific output of the query.
+
+
+
+
+
+> ### Batch Testing
+In the directory for **CGraphIndex**, there is a script file called **auto.sh**, which consists of many commands,
+including preprocessing, generating compressed adjacency lists, building **GeCSA**, and bulk querying.
+When performing batch testing, select the corresponding query problem according to the above Table, remove the comment 
+at the beginning of the line, and run it directly.
 
 
 ## Paper
