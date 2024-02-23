@@ -7,7 +7,7 @@ We use parallel external memory suffix array construction [5] to build the suffi
 ## Related Directories
 
 ### Code for CGraphIndex
-The CGraphIndex's codes are stored in the directory /home/hzt/code.
+The code for CGraphIndex is stored in the directory /home/hzt/code.
 
 ### LDBC date sets
 
