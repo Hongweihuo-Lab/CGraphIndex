@@ -27,7 +27,11 @@ Enter the command
 from the command line in the CGraphIndex directory to do the compilation and to generate four executable files: **create_init**,  **create_adjlist**, **create_index**, and **do_search**, each of which is described in the follwoing.
 
 ## Instructions for Usage
+> ### Data Preprocessing
+The executable file **create_init** is used to preprocess the LDBC dataset. The process reorganizes the LDBC dataset to generate graph structure information,
+vertex property text, and edge property text. The primary code files include **InputInit.h** and **InputInit.cpp**, and the related file is **create_init.cpp**.
 
+Enter the command
 
 
 ## Paper
