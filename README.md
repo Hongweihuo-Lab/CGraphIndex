@@ -55,7 +55,9 @@ Enter the command
 from the command line to build **gStruct/gInStruct**,   
 where    
 **TmpAdjTabledir** is the directory where the **TmpAdjTable** file is store; and     
-**Objdir** is the directory where the generated **gStruct/gInStruct** are stored after the execution.
+**Objdir** is the directory where the generated **gStruct/gInStruct** are stored after the execution. 
+
+Afrer running, some files, including **AdjList.myg** are generated in the specified directory.
 
 > ### Building Index Structures, VIndex/RIndex
 The executable file **create_index** is used to build the compressed self-indexes using **GeCSA**. The code files involved are **CSA.h** and **CSA.cpp**, and the related main function file is **create_index.cpp**. Compile and generate the executable file **create_index**.
