@@ -62,6 +62,15 @@ The executable file **create_index** is used to build the compressed self-indexe
 
 Enter the command
 
+**./create\_index blockSize Samplesize Objdir srcfile1 srcfile2 srcfile3 ...**
+
+from the command line to build **VIndex/RIndex**,   
+where   
+**blockSize** is the block size for the $\Phi$ structure;   
+**Samplesize** is the suffix array/inverse suffix array sampling step;   
+**Objdir** is the directory where the generated indexes are stored; and   
+**srcfile1 srcfile2 srcfile3 ...** are multiple parameters, which represents the texts that need to be created into compressed indexes using **GeCSA**.  
+
 
 ## Paper
 [1] Hongwei Huo, Zongtao He, and Jeffrey S. Vitter,  Indexing Labeled Property Multidigraphs in Entropy Space, with Applications,  June 13, 2023.      
