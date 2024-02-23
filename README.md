@@ -39,8 +39,12 @@ from the command line to execute the preprocessing process,
 where 
 
 **Datadir** is the directory where the LDBC raw datasets are stored; 
-**Objdir** is the directory where the preprocessed/generated files are stored; and   
+
+**Objdir** is the directory where the preprocessed/generated files are stored; and  
+
 **Cutsize** indicates the partition size for the vertex/edge property text in gigabytes.
+
+
 
 
 ## Paper
