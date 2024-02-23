@@ -32,7 +32,9 @@ The executable file **create_init** is used to preprocess the LDBC dataset. The 
 vertex property text, and edge property text. The primary code files include **InputInit.h** and **InputInit.cpp**, and the related file is **create_init.cpp**.
 
 Enter the command   
+
  **.create\_init Datadir  Objdir Cutsize**   
+ 
 from the command line to execute the preprocessing process,
 where 
 
