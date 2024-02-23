@@ -93,7 +93,20 @@ where
 **searchtimefile** indicates which file the timing of the query is stored in; and    
 The redirected **AAARES** is used to temporarily save the specific output of the query.
 
-
+| Command | Description |
+| --- | --- |
+|help |  Show the details for the command XX |                              
+|build FILENAME [BLOCK_SIZE] [SAMPLE_STEP]| Index construction                                
+|c [NUM] |   Number of times to execute the count query, 5000 by default                            
+|l [NUM] |   Number of times to execute the locate query, 5000 by default                         
+|e [NUM] |   Number of times to execute the extract query, 5000 by default                         
+|a     |    Show all test                             
+|C PP  |    Count the number of occurrences of pattern PP in the input file                        
+|L PP  |    Find all occ occurring positions of pattern PP in the input file                        
+|E START LEN|   Extract the text substring from START to START+LEN-1 in the input file                   
+|s  |    Size of the GeCSA                         
+|r  |    Compression ratio                           
+|exit |  Exit 
 
 
 
