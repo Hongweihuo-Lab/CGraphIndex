@@ -41,7 +41,7 @@ where
 **Objdir** is the directory where the preprocessed/generated files are stored; and     
 **Cutsize** indicates the partition size for the vertex/edge property text in gigabytes.
 
-After running create_init, some files are generated in the specified directory, inclusing **TmpAdjTable**, a temporary adjacency list file that is used to build
+After running **create_init**, some files are generated in the specified directory, inclusing **TmpAdjTable**, a temporary adjacency list file that is used to build
 a compressed adjacency list later.
 
 > ### Creating Compressed Adjacency List Structures, gStruct/gInStruct
@@ -51,6 +51,12 @@ Compile and generate the executable file **create_adjlist**.
 Enter the command
 
 **./create\_adjlist TmpAdjTabledir Objdir**
+
+from the command line to build **gStruct/gInStruct**,   
+where    
+**TmpAdjTabledir** is the directory where the **TmpAdjTable** file is store; and     
+**Objdir** is the directory where the generated **gStruct/gInStruct** are stored after the execution.
+
 
 ## Paper
 [1] Hongwei Huo, Zongtao He, and Jeffrey S. Vitter,  Indexing Labeled Property Multidigraphs in Entropy Space, with Applications,  June 13, 2023.      
