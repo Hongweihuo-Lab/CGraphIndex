@@ -4,6 +4,8 @@ CGraphIndex is an entropy-compressed self-index for labeled property multidigrap
 The OS used was Ubuntu 20.04, 64 bit. The algorithms were implemented in C++11 and the programs were compiled using g++ 9.4.0 with -O3.
 We use parallel external memory suffix array construction [5] to build the suffix array for large input texts. 
 
+## Related Directories
+
 ## Paper
 [1] Hongwei Huo, Zongtao He, and Jeffrey S. Vitter,  Indexing Labeled Property Multidigraphs in Entropy Space, with Applications,  June 13, 2023.      
 
