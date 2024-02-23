@@ -6,6 +6,13 @@ We use parallel external memory suffix array construction [5] to build the suffi
 
 ## Related Directories
 
+### Code for CGraphIndex
+The CGraphIndex's codes are stored in the directory /home/hzt/code.
+
+### LDBC date sets
+
+
+
 ## Paper
 [1] Hongwei Huo, Zongtao He, and Jeffrey S. Vitter,  Indexing Labeled Property Multidigraphs in Entropy Space, with Applications,  June 13, 2023.      
 
