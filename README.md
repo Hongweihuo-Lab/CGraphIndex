@@ -93,9 +93,9 @@ where
 **searchtimefile** indicates which file the timing of the query is stored in; and    
 The redirected **AAARES** is used to temporarily save the specific output of the query.
 
-| Command | Description |
+| MOD| Query |
 | --- | --- |
-|help |  Show the details for the command XX |                              
+|14 |  BFS |                              
 |build FILENAME [BLOCK_SIZE] [SAMPLE_STEP]| Index construction                                
 |c [NUM] |   Number of times to execute the count query, 5000 by default                            
 |l [NUM] |   Number of times to execute the locate query, 5000 by default                         
