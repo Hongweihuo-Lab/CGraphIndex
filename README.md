@@ -57,6 +57,11 @@ where
 **TmpAdjTabledir** is the directory where the **TmpAdjTable** file is store; and     
 **Objdir** is the directory where the generated **gStruct/gInStruct** are stored after the execution.
 
+> ### Building Index Structures, VIndex/RIndex
+The executable file **create_index** is used to build the compressed self-indexes using **GeCSA**. The code files involved are **CSA.h** and **CSA.cpp**, and the related main function file is **create_index.cpp**. Compile and generate the executable file **create_index**.
+
+Enter the command
+
 
 ## Paper
 [1] Hongwei Huo, Zongtao He, and Jeffrey S. Vitter,  Indexing Labeled Property Multidigraphs in Entropy Space, with Applications,  June 13, 2023.      
