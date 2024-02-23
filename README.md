@@ -11,7 +11,7 @@ The code for CGraphIndex is stored in the directory /home/hzt/code.
 
 ### LDBC date sets
 The directory /home/hzt/data/ \ is the directory for the LDBC Datasets. There are also several folders in the LDBCxx directory (/home/hzt/data/LDBCxx)
-under this directory, the important folders of which include:
+under this directory, where the important folders include:
 
 
 ## Paper
