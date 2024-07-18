@@ -5,7 +5,7 @@ CGraphIndex supports fundamental and navigational operations on the structures a
 
 ## 1. Compile and Build
 ### 1.1 System requirements
- - Ubuntu 20.02
+ - Ubuntu 20.04
  - GCC 10.0 or higher with C++20 standard support
  - CMake3.15 or higher
  - ninja-build
