@@ -28,7 +28,7 @@ To execute compile in optimized mode when needed, use the following commands:
 2 cmake --build "$(pwd)/build" --config Release --target all -j $(expr $(nproc) / 2) --
 ```
 The above commands will use half of the logical threads of the current machine to build, and after the build is completed, 4 executable files will be generated in the CGraphIndex/build directory:
-<span style="color: red;">CGraphIndex/build</span>
+<span style="color: blue;">CGraphIndex/build</span>
 
 ## Environments 
 Experiments were done on Dell R750 server equipped with two 32-core 2.6-3.4GHZ Intel Xeon 8358P CPUs with 80MB L2 cache, 1TB RAM, one 960GB NVMe SSD for system,
