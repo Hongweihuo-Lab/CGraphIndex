@@ -61,7 +61,15 @@ Since the peak memory for building the GIndex index is about 18 times the size o
  - The HandleEdge function handles edge properties, which processes all outdegree vertex files for each vertex label class, for example, first processing the comment vertex, it will read and process all the edge files of the comment_xxxx_yyyy of this kind of comment outdegree, and generate a temporary external adjacency list TmpAdjTable; during which there may be insufficient memory, so the external memory is used, and part of the processing results are written to the external memory first. Finally merged.
 
 After the create_init operation is completed, several files will be generated in the specified directory:
-
+ - Vertex_x/Edge_x : the text that holds the vertex/edge properties, which is the input to GIndex to generate VIndex_x / RIndex_x.
+ - Vrows.myg/Erows.myg : Holds the number of lines (i.e., the number) of the vertex/edge properties contained in each Vertex_x/Edge_x text. When you search for vertex/edge property data based on vertex Vid or edge Eid, you will determine on which line on which index file you need to search for based on the two files.
+ - Vkinds.myg : Hold information about vertex labels; details see the code comments on the Vdetail class.
+ - Ekinds.myg : Store edge-related information; details see the code comments on the Edetail class.
+ - Vmap.myg ：store all MPhash.
+ - Emap.myg ：Holds the fixed-length code for each edge relation property.
+ - Etype.myg ：Store the edge relationship properties in increasing order of Eid, and uses an InArray to store.
+ - EHasdes.myg ：The B array that indicates if an edge contains the residual properties, and supports the rank operation.
+ - TmpAdjTable ：A temporary adjacency list file that is used to build a compressed adjacency list later.
 
 
 
