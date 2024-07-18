@@ -14,6 +14,10 @@ CGraphIndex supports fundamental and navigational operations on the structures a
  - oneTBB: for parallel sorting and parallel primitives
  - OpenMP: to support multithreading
  - pSAscan: for building suffix arrays in external memory
+ - divsufsort: for building suffix arrays in memory
+
+
+
 
 ## Environments 
 Experiments were done on Dell R750 server equipped with two 32-core 2.6-3.4GHZ Intel Xeon 8358P CPUs with 80MB L2 cache, 1TB RAM, one 960GB NVMe SSD for system,
