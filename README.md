@@ -10,7 +10,7 @@ CGraphIndex supports fundamental and navigational operations on the structures a
  - CMake3.15 or higher
  - ninja-build
 
-### 1.2 Third-Party Dependency
+### 1.2 Third-Party dependency
 
 
 
