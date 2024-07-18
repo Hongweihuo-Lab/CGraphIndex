@@ -93,6 +93,20 @@ Use create_index to compress the text in the dataset using GIndex. How to use:
 
 After the build is complete, the file is stored in the dst_dir directory with the suffix .geindex.
 
+### 2.5 Query tests
+run_benchmark Used to test the time performance of CGraphIndex, and output the time used for the test, in millisecond (ms), as follows:
+```shell
+1 run_benchmark <data_dir> <query> <input> <output> [max_num]
+```
+ - data_dir  is the directory where CGraphIndex's data files are located.
+ - query  is the name of the query to be made, data type string, and its value must be one of the following tables:
+
+
+
+
+
+
+
 
 
 ## Environments 
