@@ -91,7 +91,7 @@ Use create_index to compress the text in the dataset using GIndex. How to use:
  - dst_dir : The directory for storing the generated GIndex compressed index.
  - src_file1 ... : Text files that need to be processed, which are Vertex_x/Edge_x files resulting from the preprocessing part. 
 
-
+After the build is complete, the file is stored in the dst_dir directory with the suffix .geindex.
 
 
 
