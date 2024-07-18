@@ -55,7 +55,10 @@ Use the create_init program to preprocess LDBC raw data by:
 
 Since the peak memory for building the GIndex index is about 18 times the size of the input text, it is not recommended to set the text cut size greater than 50GB on machines with 1TB of memory.
 
-
+ - The PreProcess function is a constructor of the class, which classifies LDBC raw files according to the input directory parameters, and stores and sorts the files about vertices and edges separately.
+ - The InitRun function is the main processing function, which mainly sets the number of multithreads and determines the data type of each column in the LDBC vertex and edge properties.
+ - The HandleVertex function handles vertex properties, which is primarily a traversal process that performs the following operations on all vertices of each vertex label class: using MPHash for vertex mapping; Saves the vertex properties to Vertex_x in numbered order.
+ - The HandleEdge function handles edge properties, which processes all outdegree vertex files for each vertex label class, for example, first processing the comment vertex, it will read and process all the edge files of the comment_xxxx_yyyy of this kind of comment outdegree, and generate a temporary external adjacency list TmpAdjTable; during which there may be insufficient memory, so the external memory is used, and part of the processing results are written to the external memory first. Finally merged.
 
 
 ## Environments 
