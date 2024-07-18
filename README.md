@@ -28,10 +28,10 @@ To execute compile in optimized mode when needed, use the following commands:
 2 cmake --build "$(pwd)/build" --config Release --target all -j $(expr $(nproc) / 2) --
 ```
 The above commands will use half of the logical threads of the current machine to build, and after the build is completed, 4 executable files will be generated in the **CGraphIndex/build** directory:
- - create_init: Used to preprocess LDBC datasets and split them into graph structure information, vertex property text, and edge property text.
- - create_adjlist: Used to construct the compressed adjacency list structure gStruct/gInStruct, the primary input of which is the TmpAdjTable file generated in the preprocessing.
- - create_index: used to build the compressed self-indexes.
- - run_benchmark: for batch testing.
+ - **create_init** : Used to preprocess LDBC datasets and split them into graph structure information, vertex property text, and edge property text.
+ - **create_adjlist** : Used to construct the compressed adjacency list structure gStruct/gInStruct, the primary input of which is the TmpAdjTable file generated in the preprocessing.
+ - **create_index** : used to build the compressed self-indexes.
+ - **run_benchmark** : for batch testing.
 
 ## 2. Test process
 ### 2.1 Dataset preparation
