@@ -16,7 +16,8 @@ CGraphIndex supports fundamental and navigational operations on the structures a
  - pSAscan: for building suffix arrays in external memory
  - divsufsort: for building suffix arrays in memory
 
-
+### Compilation method
+To enable Debug messages, use the following commands:
 
 
 ## Environments 
