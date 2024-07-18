@@ -65,8 +65,8 @@ After the create_init operation is completed, several files will be generated in
  - Vrows.myg/Erows.myg : Holds the number of lines (i.e., the number) of the vertex/edge properties contained in each Vertex_x/Edge_x text. When you search for vertex/edge property data based on vertex Vid or edge Eid, you will determine on which line on which index file you need to search for based on the two files.
  - Vkinds.myg : Hold information about vertex labels; details see the code comments on the Vdetail class.
  - Ekinds.myg : Store edge-related information; details see the code comments on the Edetail class.
- - Vmap.myg ：store all MPhash.
- - Emap.myg ：Holds the fixed-length code for each edge relation property.
+ - Vmap.myg ：Store all MPhash.
+ - Emap.myg ：Hold the fixed-length code for each edge relation property.
  - Etype.myg ：Store the edge relationship properties in increasing order of Eid, and uses an InArray to store.
  - EHasdes.myg ：The B array that indicates if an edge contains the residual properties, and supports the rank operation.
  - TmpAdjTable ：A temporary adjacency list file that is used to build a compressed adjacency list later.
