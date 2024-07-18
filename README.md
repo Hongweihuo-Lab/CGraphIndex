@@ -33,6 +33,11 @@ The above commands will use half of the logical threads of the current machine t
  - create_index: used to build the compressed self-indexes.
  - run_benchmark: for batch testing.
 
+## 2. Test process
+### 2.1 Dataset preparation
+
+
+
 ## Environments 
 Experiments were done on Dell R750 server equipped with two 32-core 2.6-3.4GHZ Intel Xeon 8358P CPUs with 80MB L2 cache, 1TB RAM, one 960GB NVMe SSD for system,
 and two 3.84TB NVMe SSDs in RAID0 configuration. The OS used was Ubuntu 20.04, 64 bit. The algorithms were implemented in C++11 and the programs were compiled using g++ 9.4.0 with -O3. We use parallel external memory suffix array construction [5] to build the suffix array for large input texts.  
