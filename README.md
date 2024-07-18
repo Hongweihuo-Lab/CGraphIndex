@@ -52,6 +52,7 @@ Use the create_init program to preprocess LDBC raw data by:
  - data_dir is the directory of the LDBC raw dataset.
  - dst_dir  indicates the directory where the preprocessed files are stored.
  - cut_size represents the cut size of the vertex/edge property text in gigabytes. 
+
 Since the peak memory for building the GIndex index is about 18 times the size of the input text, it is not recommended to set the text cut size greater than 50GB on machines with 1TB of memory.
 
 
