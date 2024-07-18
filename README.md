@@ -101,17 +101,17 @@ run_benchmark Used to test the time performance of CGraphIndex, and output the t
  - data_dir  is the directory where CGraphIndex's data files are located.
  - query  is the name of the query to be made, data type string, and its value must be one of the following table:
 
-| MOD| Query |
-| --- | --- |
-| 14 |  BFS | 
-| 15 | PageRank |
-| 3 | kHopFriends |
-| 4 | IC1 |
-| 6 | IC5 |
-| 8 | IC13 |
-| 11 | BI3 |
-| 12 | BI10 |
-| 13 | BI16 |
+| query | descriptions |
+| ---  | --- |
+| bfs  |  parallel BFS | 
+| page_rank | parallel PageRank |
+| khops| k-hops friends query |
+| ic1  | LDBC SNB-interactive-complex-1 query |
+| ic5  | LDBC SNB-interactive-complex-5 query |
+| ic13 | LDBC SNB-interactive-complex-13 query |
+| bi3  | LDBC SNB-business-intelligence-3 query |
+| bi10 | LDBC SNB-business-intelligence-10 query |
+| bi16 | LDBC SNB-business-intelligence-16 query |
 
 - input  is the name of the input file, and each line of the input file represents an input, and each parameter in the input is separated by a space.
  - output is the name of the resulting output file to which the test results will be written.
