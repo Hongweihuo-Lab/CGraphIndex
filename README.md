@@ -10,8 +10,8 @@ CGraphIndex supports fundamental and navigational operations on the structures a
  - CMake3.15 or higher
  - ninja-build
 
-### 1.2 Third-Party dependency
-
+### 1.2 Third-party dependency
+ - oneTBB: for parallel sorting and parallel primitives
 
 
 
