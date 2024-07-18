@@ -117,11 +117,13 @@ run_benchmark Used to test the time performance of CGraphIndex, and output the t
  - output is the name of the resulting output file to which the test results will be written.
  - max_num  is an optional parameter that indicates the maximum number of tests, and the final number of tests will not exceed the value of this parameter. If this parameter is not provided, every piece of data in the input file will be tested.
 
-Input File Format Description: Different from the substitution_parameter generated in LDBC that uses | The format of the split parameters, run_benchmark requires the input parameters to be separated by spaces, and a Python3 script convert_sep.py is provided in the CGraphIndex/scripts directory to complete the process, and the script usage is:
+Input File Format Description: 
 
-
-
-
+Different from the substitution_parameter generated in LDBC that uses | The format of the split parameters, run_benchmark requires the input parameters to be separated by spaces, and a Python3 script convert_sep.py is provided in the CGraphIndex/scripts directory to complete the process, and the script usage is:
+```shell
+1 python3 convert_sep.py -p <filename>
+```
+where filename is the input file to be processed.
 
 
 
