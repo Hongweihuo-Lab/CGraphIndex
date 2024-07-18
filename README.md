@@ -103,8 +103,8 @@ run_benchmark Used to test the time performance of CGraphIndex, and output the t
 
 | query | descriptions |
 | ---  | --- |
-| bfs  |  parallel BFS | 
-| page_rank | parallel PageRank |
+| bfs  |  BFS | 
+| page_rank | PageRank |
 | khops| k-hops friends query |
 | ic1  | LDBC SNB-interactive-complex-1 query |
 | ic5  | LDBC SNB-interactive-complex-5 query |
