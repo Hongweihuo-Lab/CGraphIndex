@@ -60,6 +60,10 @@ Since the peak memory for building the GIndex index is about 18 times the size o
  - The HandleVertex function handles vertex properties, which is primarily a traversal process that performs the following operations on all vertices of each vertex label class: using MPHash for vertex mapping; Saves the vertex properties to Vertex_x in numbered order.
  - The HandleEdge function handles edge properties, which processes all outdegree vertex files for each vertex label class, for example, first processing the comment vertex, it will read and process all the edge files of the comment_xxxx_yyyy of this kind of comment outdegree, and generate a temporary external adjacency list TmpAdjTable; during which there may be insufficient memory, so the external memory is used, and part of the processing results are written to the external memory first. Finally merged.
 
+After the create_init operation is completed, several files will be generated in the specified directory:
+
+
+
 
 ## Environments 
 Experiments were done on Dell R750 server equipped with two 32-core 2.6-3.4GHZ Intel Xeon 8358P CPUs with 80MB L2 cache, 1TB RAM, one 960GB NVMe SSD for system,
