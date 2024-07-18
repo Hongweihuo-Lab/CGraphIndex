@@ -71,6 +71,13 @@ After the create_init operation is completed, several files will be generated in
  - EHasdes.myg ：The B array that indicates if an edge contains the residual properties, and supports the rank operation.
  - TmpAdjTable ：A temporary adjacency list file that is used to build a compressed adjacency list later.
 
+### 2.3 Build Compressed Adjacency List Structures
+
+
+
+
+
+
 
 
 ## Environments 
