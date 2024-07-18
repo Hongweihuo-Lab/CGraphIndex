@@ -44,6 +44,8 @@ It is recommended to use a Docker image of ldbc/datagen-standalone (https://hub.
 ```
 Before running the above command, you need to set the variable SF in the shell, given the specified scale, for example, to generate a dataset of SF30, you need to set SF=30. 
 
+### 2.2 Data preprocessing
+
 
 
 ## Environments 
