@@ -47,7 +47,7 @@ Before running the above command, you need to set the variable SF in the shell, 
 ### 2.2 Data preprocessing
 Use the create_init program to preprocess LDBC raw data by:
 ```shell
-1 create_init <data_dir> <1 dst_dir> <cut_size>
+1 create_init <data_dir> <dst_dir> <cut_size>
 ```
  - data_dir is the directory of the LDBC raw dataset.
  - dst_dir  indicates the directory where the preprocessed files are stored.
