@@ -18,11 +18,17 @@ CGraphIndex supports fundamental and navigational operations on the structures a
 
 ### 1.3 Compilation method
 To enable Debug messages, use the following commands:
-
 ```shell
 cd CGraphIndex
 cmake --build "$(pwd)/build" --config Release --target all -j $(expr $(nproc) / 2) --
 ```
+To execute compile in optimized mode when needed, use the following commands:
+```shell
+1 cd CGraphIndex
+2 cmake --build "$(pwd)/build" --config Release --target all -j $(expr $(nproc) / 2) --
+```
+
+
 
 ## Environments 
 Experiments were done on Dell R750 server equipped with two 32-core 2.6-3.4GHZ Intel Xeon 8358P CPUs with 80MB L2 cache, 1TB RAM, one 960GB NVMe SSD for system,
