@@ -99,9 +99,19 @@ run_benchmark Used to test the time performance of CGraphIndex, and output the t
 1 run_benchmark <data_dir> <query> <input> <output> [max_num]
 ```
  - data_dir  is the directory where CGraphIndex's data files are located.
- - query  is the name of the query to be made, data type string, and its value must be one of the following tables:
+ - query  is the name of the query to be made, data type string, and its value must be one of the following table:
 
-
+| MOD| Query |
+| --- | --- |
+| 14 |  BFS | 
+| 15 | PageRank |
+| 3 | kHopFriends |
+| 4 | IC1 |
+| 6 | IC5 |
+| 8 | IC13 |
+| 11 | BI3 |
+| 12 | BI10 |
+| 13 | BI16 |
 
 - input  is the name of the input file, and each line of the input file represents an input, and each parameter in the input is separated by a space.
  - output is the name of the resulting output file to which the test results will be written.
