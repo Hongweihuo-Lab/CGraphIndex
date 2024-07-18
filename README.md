@@ -42,7 +42,7 @@ It is recommended to use a Docker image of ldbc/datagen-standalone (https://hub.
 3     --mount type=bind,source="$(pwd)/sf${SF}",target=/out \
 4     ldbc/datagen-standalone --parallelism 1 -- --format csv --scale-factor ${SF} –mode interactive
 ```
-
+Before running the above command, you need to set the variable SF in the shell, given the specified scale, for example, to generate a dataset of SF30, you need to set SF=30. 
 
 
 
