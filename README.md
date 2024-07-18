@@ -1,5 +1,7 @@
 # CGraphIndex
-CGraphIndex is an entropy-compressed self-index for labeled property multidigraphs [1]. The space usage for CGraphIndex achieves the kth-order entropy space bound for multidigraph properties (the dominant term in practice) and the 1st-order entropy space bound for multidigraph structures. A self-index actually encodes the original input and thus there is no need to store the input separately. CGraphIndex supports fundamental and navigational operations on the structures and on the properties in constant time, supports substring extraction in near-optimal time, and efficiently supports BFS, PageRank [2], k-hop friends query, and typical interactive complex queries [3] and business intelligence queries [4].
+ is a novel compressed self-index for labeled property multidigraphs. It for the first time achieves the kth-order entropy space bound for multidigraph properties (the dominant term in practice) and the 1st-order graph entropy for multidigraph structures. A self-index actually encodes the original input and thus there is no need to store the input separately.
+
+XXXX-1 supports fundamental and navigational operations on the structures and on the properties in constant time, supports fast property extraction on vertices and edges, and efficiently supports typical interactive complex and business intelligence queries [1,2], as well as BFS and PageRank [3,4]. Experimental results on the tested large LDBC SNB data [5] demonstrate that substantial improvements in practice.
 
 ## Environments 
 Experiments were done on Dell R750 server equipped with two 32-core 2.6-3.4GHZ Intel Xeon 8358P CPUs with 80MB L2 cache, 1TB RAM, one 960GB NVMe SSD for system,
@@ -115,11 +117,10 @@ When performing batch testing, select the corresponding query problem according 
 at the beginning of the line, and run it directly.
 
 
-## Paper
-[1] Hongwei Huo, Zongtao He, and Jeffrey S. Vitter,  Indexing Labeled Property Multidigraphs in Entropy Space, with Applications,  June 13, 2023.      
-
 ## References
-[2] L. Page, S. Brin, R. Motwani and T. Winograd, The PageRank Citation Ranking : Bringing Order to the Web, In The Web Conference, 1999. [PDF](https://api.semanticscholar.org/CorpusID:1508503)
-[3] O. Erling, A. Averbuch, J. Larriba-Pey, et al., The LDBC Social Network Benchmark: Interactive Workload, In SIGMOD, pp. 619-630, 2015. [PDF](https://doi.org/10.1145/2723372.2742786)     
-[4] G. Szarnyas, J. Waudby, B.A. Steer, et al., The LDBC Social Network Benchmark: Business Intelligence Workload, In PVLDB, pp. 877-890, 2022. [PDF](https://doi.org/10.14778/3574245.3574270)  
+[1] Orri Erling et al., The LDBC Social Network Benchmark: Interactive Workload, In SIGMOD, pages 619–630, 2015. https://doi.org/10.1145/2723372.2742786
+[2] Szárnyas et al., The LDBC Social Network Benchmark: Business Intelligence Workload. PVLDB 16(4): 877–890, 2022. https://doi.org/10.14778/3574245.3574270
+[3]  Lawrence Page and Sergey Brin and Rajeev Motwani and Terry Winograd, The PageRank Citation Ranking: Bringing Order to the Web, The Web Conference, 1999.https://api.semanticscholar.org/CorpusID:1508503.     
+[4]  Iosup et al., The LDBC Graphalytics Benchmark, 2023, https://arxiv.org/abs/2011.15028(https://doi.org/10.14778/3574245.3574270)  
+[5] The LDBC Social Network Benchmark, 2024, https://arxiv.org/abs/2001.02299
 [5] J. K"arkk"ainen, D. Kempa, and S. J. Puglisi, Parallel External Memory Suffix Sorting, In CPM, pp. 329-342, 2015. [PDF](https://doi.org/10.1007/978-3-319-19929-0_28)
