@@ -72,7 +72,10 @@ After the create_init operation is completed, several files will be generated in
  - TmpAdjTable ：A temporary adjacency list file that is used to build a compressed adjacency list later.
 
 ### 2.3 Build Compressed Adjacency List Structures
-
+Use create_adjlist to build a compressed adjacency table structure gStruct/gInStruct in the following ways:
+```shell
+1 create_adjlist <tmp_adj_table_dir> <dst_dir>
+```
 
 
 
