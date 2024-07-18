@@ -27,7 +27,7 @@ To execute compile in optimized mode when needed, use the following commands:
 1 cd CGraphIndex
 2 cmake --build "$(pwd)/build" --config Release --target all -j $(expr $(nproc) / 2) --
 ```
-
+The above commands will use half of the logical threads of the current machine to build, and after the build is completed, 4 executable files will be generated in the CGraphIndex/build directory:
 
 
 ## Environments 
