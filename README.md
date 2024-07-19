@@ -49,7 +49,7 @@ Use the create_init program to preprocess LDBC raw data by:
 ```shell
 1 create_init <data_dir> <dst_dir> <cut_size>
 ```
- - **data_dir** is the directory where the LDBC raw dataset are stored.
+ - **data_dir** is the directory where the LDBC raw datasets are stored.
  - **dst_dir**  indicates the directory where the preprocessed files are stored.
  - **cut_size** represents the cut size of the vertex/edge property text in gigabytes. 
 
