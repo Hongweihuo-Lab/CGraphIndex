@@ -14,7 +14,7 @@ CGraphIndex supports fundamental and navigational operations on the structures a
  - oneTBB: for parallel sorting and parallel primitives
  - OpenMP: to support multithreading
  - pSAscan [6]: for building suffix arrays in external memory
- - divsufsort: for building suffix arrays in memory
+ - divsufsort [7]: for building suffix arrays in memory
 
 ### 1.3 Compilation method
 To enable Debug messages, use the following commands:
@@ -145,4 +145,6 @@ at the beginning of the line, and run it directly.
 [5] The LDBC Social Network Benchmark, 2024, https://arxiv.org/abs/2001.02299
 
 [6] Kärkkäinen, Juha and Kempa, Dominik and J. Puglisi, Simon, Parallel External Memory Suffix Sorting, In CPM, pages 329--342, 2015, https://doi.org/10.1007/978-3-319-19929-0_28.
+
+[7] Yuta Mori, A lightweight suffix-sorting library, 2008. https://github.com/y-256/libdivsufsort/.
 
