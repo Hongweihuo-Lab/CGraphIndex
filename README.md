@@ -11,10 +11,11 @@ CGraphIndex supports fundamental and navigational operations on the structures a
  - ninja-build
 
 ### 1.2 Third-party dependency
- - oneTBB: for parallel sorting and parallel primitives
- - OpenMP: to support multithreading
- - pSAscan [6]: for building suffix arrays in external memory
- - divsufsort [7]: for building suffix arrays in memory
+ - oneTBB [6] : for parallel sorting and parallel primitives
+ - OpenMP [7] : to support multithreading
+ - BBHash [8] : for vertex ID mapping
+ - pSAscan [9] : for building suffix arrays in external memory
+ - divsufsort [10] : for building suffix arrays in memory
 
 ### 1.3 Compilation method
 To enable Debug messages, use the following commands:
