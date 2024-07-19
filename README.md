@@ -66,10 +66,10 @@ After the **create_init** operation is completed, several files will be generate
  - **EHasdes.myg** : The B array that indicates if an edge contains the residual properties, and supports the rank operation.
  - **TmpAdjTable** : A temporary adjacency list file that is used to build a compressed adjacency list later.
 
-### 2.3 Build Compressed Adjacency List Structures
+### 2.3 Build compressed adjacency list structures
 Use **create_adjlist** to build a compressed adjacency table structure gStruct/gInStruct in the following ways:
 ```shell
-1 create_adjlist <tmp_adj_table_dir> <dst_dir>
+1 create_adjlist <tmp_adj_table_dir>c <dst_dir>
 ```
  - **tmp_adj_table_dir** : The directory where the TmpAdjTable generated for the preprocessing is located. 
  - **dst_dir** : The directory where the gStruct/gInStruct will be generated after the build is complete.
