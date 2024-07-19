@@ -97,7 +97,7 @@ Use **create_index** to compress the text in the dataset using GIndex. How to us
 After the build is complete, the file is stored in the **dst_dir** directory with the suffix **.geindex**.
 
 ### 2.5 Query tests
-**run_benchmark** Used to test the time performance of CGraphIndex, and output the time used for the test, in millisecond (ms), as follows:
+**run_benchmark** is used to test the query time performance of CGraphIndex, and output the time for the test in millisecond (ms), as follows:
 ```shell
 1 run_benchmark <data_dir> <query> <input> <output> [max_num]
 ```
@@ -127,14 +127,6 @@ Different from the substitution_parameter generated in LDBC that uses | The form
 1 python3 convert_sep.py -p <filename>
 ```
 where filename is the input file to be processed.
-
-
-> ### Batch Testing
-In the directory for **CGraphIndex**, there is a script file called **auto.sh**, which consists of many commands,
-including preprocessing, generating compressed adjacency lists, building **GeCSA**, and bulk querying.
-When performing batch testing, select the corresponding query problem according to the above Table, remove the comment 
-at the beginning of the line, and run it directly.
-
 
 ## References
 [1] Orri Erling et al., The LDBC Social Network Benchmark: Interactive Workload, In SIGMOD, pages 619–630, 2015. https://doi.org/10.1145/2723372.2742786
