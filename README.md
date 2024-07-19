@@ -144,5 +144,5 @@ at the beginning of the line, and run it directly.
 
 [5] The LDBC Social Network Benchmark, 2024, https://arxiv.org/abs/2001.02299
 
-[6] K{\"a}rkk{\"a}inen, Juha and Kempa, Dominik and J. Puglisi, Simon, Parallel External Memory Suffix Sorting, In CPM, pages 329--342, 2015, https://doi.org/10.1007/978-3-319-19929-0_28.
+[6] Kärkk{\"a}inen, Juha and Kempa, Dominik and J. Puglisi, Simon, Parallel External Memory Suffix Sorting, In CPM, pages 329--342, 2015, https://doi.org/10.1007/978-3-319-19929-0_28.
 
