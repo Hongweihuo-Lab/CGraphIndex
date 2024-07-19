@@ -95,9 +95,9 @@ After the build is complete, the file is stored in the **dst_dir** directory wit
 ```
  - **data_dir**  is the directory where CGraphIndex's data files are located.
  - **query**  is the name of the query to be made, data type string, and its value must be one of the following table:
- - input  is the name of the input file, and each line of the input file represents an input, and each parameter in the input is separated by a space.
- - output is the name of the resulting output file to which the test results will be written.
- - max_num  is an optional parameter that indicates the maximum number of tests, and the final number of tests will not exceed the value of this parameter. If this parameter is not provided, every piece of data in the input file will be tested.
+ - **input**  is the name of the input file, and each line of the input file represents an input, and each parameter in the input is separated by a space.
+ - **output** is the name of the resulting output file to which the test results will be written.
+ - **max_num**  is an optional parameter that indicates the maximum number of tests, and the final number of tests will not exceed the value of this parameter. If this parameter is not provided, every piece of data in the input file will be tested.
 
 | query | descriptions |
 | ---  | --- |
@@ -117,7 +117,7 @@ Different from the substitution_parameter generated in LDBC that uses | The form
 ```shell
 1 python3 convert_sep.py -p <filename>
 ```
-where filename is the input file to be processed.
+where **filename** is the input file to be processed.
 
 ## References
 [1] Orri Erling et al., The LDBC Social Network Benchmark: Interactive Workload, In SIGMOD, pages 619–630, 2015. https://doi.org/10.1145/2723372.2742786
