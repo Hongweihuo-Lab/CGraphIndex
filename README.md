@@ -55,14 +55,6 @@ Use the create_init program to preprocess LDBC raw data by:
 
 Since the peak memory for building the GIndex index is about 18 times the size of the input text, it is not recommended to set the text cut size greater than 50GB on machines with 1TB of memory.
 
-The main function in **create_init.cpp** contains the following functions:
-
-
- - The **PreProcess** function is a constructor of the class, which classifies LDBC raw files according to the input directory parameters, and stores and sorts the files about vertices and edges separately.
- - The **InitRun** function is the main processing function, which mainly sets the number of multithreads and determines the data type of each column in the LDBC vertex and edge properties.
- - The **HandleVertex** function handles vertex properties, which is primarily a traversal process that performs the following operations on all vertices of each vertex label class: using MPHash for vertex mapping; Saves the vertex properties to Vertex_x in numbered order.
- - The **HandleEdge** function handles edge properties, which processes all outdegree vertex files for each vertex label class, for example, first processing the comment vertex, it will read and process all the edge files of the comment_xxxx_yyyy of this kind of comment outdegree, and generate a temporary external adjacency list TmpAdjTable; during which there may be insufficient memory, so the external memory is used, and part of the processing results are written to the external memory first. Finally merged.
-
 After the **create_init** operation is completed, several files will be generated in the specified directory:
  - **Vertex_x/Edge_x** : the text that holds the vertex/edge properties, which is the input to GIndex to generate VIndex_x / RIndex_x.
  - **Vrows.myg/Erows.myg** : Holds the number of lines (i.e., the number) of the vertex/edge properties contained in each Vertex_x/Edge_x text. When you search for vertex/edge property data based on vertex Vid or edge Eid, you will determine on which line on which index file you need to search for based on the two files.
@@ -103,6 +95,9 @@ After the build is complete, the file is stored in the **dst_dir** directory wit
 ```
  - **data_dir**  is the directory where CGraphIndex's data files are located.
  - **query**  is the name of the query to be made, data type string, and its value must be one of the following table:
+ - input  is the name of the input file, and each line of the input file represents an input, and each parameter in the input is separated by a space.
+ - output is the name of the resulting output file to which the test results will be written.
+ - max_num  is an optional parameter that indicates the maximum number of tests, and the final number of tests will not exceed the value of this parameter. If this parameter is not provided, every piece of data in the input file will be tested.
 
 | query | descriptions |
 | ---  | --- |
@@ -116,12 +111,8 @@ After the build is complete, the file is stored in the **dst_dir** directory wit
 | bi10 | LDBC SNB-business-intelligence-10 query |
 | bi16 | LDBC SNB-business-intelligence-16 query |
 
-- input  is the name of the input file, and each line of the input file represents an input, and each parameter in the input is separated by a space.
- - output is the name of the resulting output file to which the test results will be written.
- - max_num  is an optional parameter that indicates the maximum number of tests, and the final number of tests will not exceed the value of this parameter. If this parameter is not provided, every piece of data in the input file will be tested.
 
-Input File Format Description: 
-
+Input File Format Description:      
 Different from the substitution_parameter generated in LDBC that uses | The format of the split parameters, run_benchmark requires the input parameters to be separated by spaces, and a Python3 script convert_sep.py is provided in the CGraphIndex/scripts directory to complete the process, and the script usage is:
 ```shell
 1 python3 convert_sep.py -p <filename>
