@@ -55,7 +55,7 @@ Use the create_init program to preprocess LDBC raw data by:
 
 Since the peak memory for building the GIndex index is about 18 times the size of the input text, it is not recommended to set the text cut size greater than 50GB on machines with 1TB of memory.
 
-The main function in **create_init.cpp** contains the following execution procedures:
+The main function in **create_init.cpp** contains the following functions:
 
 
  - The **PreProcess** function is a constructor of the class, which classifies LDBC raw files according to the input directory parameters, and stores and sorts the files about vertices and edges separately.
