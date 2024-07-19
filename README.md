@@ -131,7 +131,13 @@ where **filename** is the input file to be processed.
 
 [5] The LDBC Social Network Benchmark, 2024, https://arxiv.org/abs/2001.02299
 
-[6] Kärkkäinen, Juha and Kempa, Dominik and J. Puglisi, Simon, Parallel External Memory Suffix Sorting, In CPM, pages 329--342, 2015, https://doi.org/10.1007/978-3-319-19929-0_28.
+[6] oneTBB, https://github.com/oneapi-src/oneTBB
 
-[7] Yuta Mori, A lightweight suffix-sorting library, 2008. https://github.com/y-256/libdivsufsort/.
+[7] OpenMP, https://github.com/OpenMP
+
+[8] Antoine Limasset, Guillaume Rizk, Rayan Chikhi, and Pierre Peterlongo, Fast and Scalable Minimal Perfect Hashing for Massive Key Sets, In SEA, pages 25:1–25:16, 2017. https://doi.org/10.4230/LIPIcs.SEA.2017.25.
+
+[9] Juha Kärkkäinen, Dominik Kempa, and Simon J. Puglisi, Parallel External Memory Suffix Sorting, In CPM, pages 329--342, 2015, https://doi.org/10.1007/978-3-319-19929-0_28.
+
+[10] Yuta Mori, A lightweight suffix-sorting library, 2008. https://github.com/y-256/libdivsufsort/.
 
