@@ -22,7 +22,7 @@ To enable Debug messages, use the following commands:
 1 cd CGraphIndex
 2 cmake --build "$(pwd)/build" --config Debug --target all -j $(expr $(nproc) / 2) --
 ```
-To execute compile in optimized mode when needed, use the following commands:
+To execute compile in optimized mode, use the following commands:
 ```shell
 1 cd CGraphIndex
 2 cmake --build "$(pwd)/build" --config Release --target all -j $(expr $(nproc) / 2) --
