@@ -17,7 +17,7 @@ CGraphIndex supports fundamental and navigational operations on the structures a
  - pSAscan [9] : for building suffix arrays in external memoryre
  - divsufsort [10] : for building suffix arrays in memory
 
-BBHash, pSAscan and divsufsort have been placed in the CGraphIndex directory in source code form. OpenMP and oneTBB need to be installed by the user and make CMake be able to find the corresponding configuration files. OpenMP is typically installed with common compiler toolchains such as GCC. For oneTBB, you can install it via a package manager or an installer script available at onetbb-install{https://www.intel.com/content/www/us/en/docs/onetbb/get-started-guide/2021-12/install-on-linux-os.html} .
+BBHash, pSAscan and divsufsort have been placed in the CGraphIndex directory in source code form. OpenMP and oneTBB need to be installed by the user and make CMake be able to find the corresponding configuration files. OpenMP is typically installed with common compiler toolchains such as GCC. For oneTBB, you can install it via a package manager or an installer script available at [onetbb-install](https://www.intel.com/content/www/us/en/docs/onetbb/get-started-guide/2021-12/install-on-linux-os.html).
 
 ### 1.3 Compilation method
 To enable Debug messages, use the following commands:
