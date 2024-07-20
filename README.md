@@ -45,7 +45,7 @@ docker run \
   --mount type=bind,source="$(pwd)/sf${SF}",target=/out \
   ldbc/datagen-standalone --parallelism 1 -- --format csv --scale-factor ${SF} –mode interactive
 ```
-Before running the above command, you need to set the variable **SF** in the shell, given the specified scale, for example, to generate a dataset of SF30, you need to set **SF=30**. 
+Before running the above command, you need to set the variable **SF** in the shell, given the specified scale, for example, to generate a dataset of SF30, you need to set **SF=30**, and the generated files will be placed in the **./sf30** directory. 
 
 ### 2.2 Data preprocessing
 Use the create_init program to preprocess LDBC raw data by:
