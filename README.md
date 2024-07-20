@@ -38,7 +38,7 @@ The above commands will use half of the logical threads of the current machine t
 
 ## 2. Test process
 ### 2.1 Dataset preparation
-It is recommended to use a Docker image of [ldbc/datagen-standalone](https://hub.docker.com/r/ldbc/datagen-standalone) for deployment, and after pulling the image, run the following command to generate a dataset of the specified size:
+It is recommended to use a Docker image of [ldbc/datagen-standalone](https://hub.docker.com/r/ldbc/datagen-standalone) for dataset preparation, after pulling the image, run the following command to generate a dataset of the specified size:
 ```shell
 1 mkdir -p "sf${SF}"
 2 docker run \
