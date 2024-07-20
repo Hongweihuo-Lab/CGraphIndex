@@ -84,8 +84,8 @@ Use **create_index** to compress the text in the dataset using GIndex. How to us
 ```shell
 1 create_index <block_size> <sample_size> <dst_dir> <src_file1> [src_files...]
 ```
- - **block_size** : The chunk size of GIndex, recommend it to 128.
- - **sample_size** : The sample size of the suffix array in GIndex, recommend it to 64.
+ - **block_size** : The chunk size of GIndex; the recommended setting is 128.
+ - **sample_size** : The sample size of the suffix array in GIndex; the recommended setting is 128.
  - **dst_dir** : The directory for storing the generated GIndex compressed index.
  - **src_file1** ... : Text files that need to be processed, which are Vertex_x/Edge_x files resulting from the preprocessing part. 
 
