@@ -40,10 +40,10 @@ The above commands will use half of the logical threads of the current machine t
 ### 2.1 Dataset preparation
 It is recommended to use a Docker image of [ldbc/datagen-standalone](https://hub.docker.com/r/ldbc/datagen-standalone) for dataset preparation, after pulling the image, run the following command to generate a dataset of the specified size:
 ```shell
-1 mkdir -p "sf${SF}"
-2 docker run \
-3     --mount type=bind,source="$(pwd)/sf${SF}",target=/out \
-4     ldbc/datagen-standalone --parallelism 1 -- --format csv --scale-factor ${SF} –mode interactive
+mkdir -p "sf${SF}"
+docker run \
+  --mount type=bind,source="$(pwd)/sf${SF}",target=/out \
+  ldbc/datagen-standalone --parallelism 1 -- --format csv --scale-factor ${SF} –mode interactive
 ```
 Before running the above command, you need to set the variable **SF** in the shell, given the specified scale, for example, to generate a dataset of SF30, you need to set **SF=30**. 
 
