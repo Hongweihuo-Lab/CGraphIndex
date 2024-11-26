@@ -160,9 +160,9 @@ where **filename** is the input file to be processed.
 
 [2] Szárnyas et al., The LDBC Social Network Benchmark: Business Intelligence Workload. PVLDB 16(4): 877–890, 2022. https://doi.org/10.14778/3574245.3574270
 
-[3]  Lawrence Page and Sergey Brin and Rajeev Motwani and Terry Winograd, The PageRank Citation Ranking: Bringing Order to the Web, The Web Conference, 1999. https://api.semanticscholar.org/CorpusID:1508503.     
+[3]  Lawrence Page and Sergey Brin and Rajeev Motwani and Terry Winograd, The PageRank Citation Ranking: Bringing Order to the Web, The Web Conference, 1999. https://api.semanticscholar.org/CorpusID:1508503     
 
-[4]  Iosup et al., The LDBC Graphalytics Benchmark, 2023. https://arxiv.org/abs/2011.15028(https://doi.org/10.14778/3574245.3574270)  
+[4]  Iosup et al., The LDBC Graphalytics Benchmark, 2023. https://arxiv.org/abs/2011.15028  
 
 [5] The LDBC Social Network Benchmark, 2024. https://arxiv.org/abs/2001.02299
 
@@ -170,8 +170,8 @@ where **filename** is the input file to be processed.
 
 [7] OpenMP, https://github.com/OpenMP
 
-[8] Antoine Limasset, Guillaume Rizk, Rayan Chikhi, and Pierre Peterlongo, Fast and Scalable Minimal Perfect Hashing for Massive Key Sets, In SEA, pages 25:1–25:16, 2017. https://doi.org/10.4230/LIPIcs.SEA.2017.25.
+[8] Antoine Limasset, Guillaume Rizk, Rayan Chikhi, and Pierre Peterlongo, Fast and Scalable Minimal Perfect Hashing for Massive Key Sets, In SEA, pages 25:1–25:16, 2017. https://doi.org/10.4230/LIPIcs.SEA.2017.25
 
-[9] Juha Kärkkäinen, Dominik Kempa, and Simon J. Puglisi, Parallel External Memory Suffix Sorting, In CPM, pages 329--342, 2015. https://doi.org/10.1007/978-3-319-19929-0_28.
+[9] Juha Kärkkäinen, Dominik Kempa, and Simon J. Puglisi, Parallel External Memory Suffix Sorting, In CPM, pages 329--342, 2015. https://doi.org/10.1007/978-3-319-19929-0_28
 
-[10] Yuta Mori, A lightweight suffix-sorting library, 2008. https://github.com/y-256/libdivsufsort/.
+[10] Yuta Mori, A lightweight suffix-sorting library, 2008. https://github.com/y-256/libdivsufsort/
