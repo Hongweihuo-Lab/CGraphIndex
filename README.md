@@ -15,8 +15,7 @@ CGraphIndex supports fundamental and navigational operations on the structures a
 
 ### 1.2 Third-party dependencies
 
- - oneTBB [6] : for parallel sorting and parallel primitives
- - OpenMP [7] : to support multithreading
+ - oneTBB [6] and  OpenMP [7]: to support multithreading
  - BBHash [8] : for vertex ID remapping
  - pSAscan [9] : for building suffix arrays in external memory
  - divsufsort [10] : for building suffix arrays in memory
