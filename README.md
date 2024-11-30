@@ -38,7 +38,7 @@ To compile in optimized mode, use the following commands:
 2 cmake --build "$(pwd)/build" --config Release --target all -j $(expr $(nproc) / 2) --
 ```
 
-The above commands will use half of the logical threads of the current machine to build, and after the build is completed, 4 executable files will be generated in the **CGraphIndex/build** directory:
+The above commands use half of the logical threads of the current machine to build, and when the build is completed, 4 executable files are generated in the **CGraphIndex/build** directory:
 
  - **create_init** : used to preprocess LDBC datasets and split them into graph structure information, vertex property text, and edge property text.
  - **create_adjlist** : used to construct the compressed adjacency list structure gStruct/gInStruct, the primary input of which is the TmpAdjTable file generated in the preprocessing.
@@ -62,7 +62,7 @@ Before running the above command, you need to set the variable **SF** in the she
 
 ### 2.2 Data preprocessing
 
-Use the create_init program to preprocess LDBC raw data by:
+Use the **create_init** program to preprocess LDBC raw data by:
 
 ```shell
 1 create_init <data_dir> <dst_dir> <cut_size>
