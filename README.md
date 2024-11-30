@@ -74,7 +74,7 @@ Use the **create_init** program to preprocess LDBC raw data by:
 
 Since the peak memory for building the GIndex index is about 18 times the size of the input text, it is not recommended to set the **cut_size** greater than 50GB on machines with 1TB of memory.
 
-After the **create_init** operation is completed, several files will be generated in the specified directory:
+After the **create_init** operation is completed, several files are generated in the specified directory:
 
  - **Vertex_x/Edge_x** : the text that holds the vertex/edge properties, which is the input to GIndex to generate VIndex_x / RIndex_x.
  - **Vrows.myg/Erows.myg** : Holds the number of lines (i.e., the number) of the vertex/edge properties contained in each Vertex_x/Edge_x text. When you search for vertex/edge property data based on vertex Vid or edge Eid, you will determine on which line on which index file you need to search for based on the two files.
