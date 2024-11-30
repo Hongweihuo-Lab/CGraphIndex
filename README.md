@@ -88,14 +88,14 @@ After the **create_init** operation is completed, several files are generated in
 
 ### 2.3 Build compressed adjacency list structures
 
-Use **create_adjlist** to build a compressed adjacency table structure gStruct/gInStruct in the following ways:
+Use **create_adjlist** to build a compressed adjacency list structure gStruct/gInStruct in the following ways:
 
 ```shell
 1 create_adjlist <tmp_adj_table_dir> <dst_dir>
 ```
 
- - **tmp_adj_table_dir** : The directory where the TmpAdjTable generated for the preprocessing is located. 
- - **dst_dir** : The directory where the gStruct/gInStruct will be generated after the build is complete.
+ - **tmp_adj_table_dir** : The directory where the TmpAdjTable is. 
+ - **dst_dir** : The directory where the gStruct/gInStruct is generated after the build is complete.
 
 After the build is complete, the file is stored in the **dst_dir** directory and the file name is **AdjList.myg**.
 
@@ -110,7 +110,7 @@ Use **create_index** to compress the text in the dataset using GIndex. How to us
  - **block_size** : The chunk size of GIndex, the recommended setting is 128.
  - **sample_size** : The sample size of the suffix array in GIndex, the recommended setting is 128.
  - **dst_dir** : The directory for storing the generated GIndex compressed index.
- - **src_file1** ... : Text files that need to be processed, which are Vertex_x/Edge_x files resulting from the preprocessing part. 
+ - **src_file1** ... : Text files that need to be processed, which are Vertex_x/Edge_x files resulting from the preprocessing. 
 
 After the build is complete, the file is stored in the **dst_dir** directory with the suffix **.geindex**.
 
