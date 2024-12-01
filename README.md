@@ -1,8 +1,8 @@
 # CGraphIndex
 
-CGraphIndex is a novel compressed self-index for labeled property multidigraphs. It for the first time achieves the kth-order entropy space bound for multidigraph properties (the dominant term in practice) and the 1st-order graph entropy for multidigraph structures. A self-index actually encodes the original input and thus there is no need to store the input separately.
+CGraphIndex [1] is a novel compressed self-index for labeled property multidigraphs. It for the first time achieves the kth-order entropy space bound for multidigraph properties (the dominant term in practice) and the 1st-order graph entropy for multidigraph structures. A self-index actually encodes the original input and thus there is no need to store the input separately.
 
-CGraphIndex supports fundamental and navigational operations on the structures and on the properties in constant time, supports fast property extraction on vertices and edges, and efficiently supports typical interactive complex and business intelligence queries [1,2], as well as BFS and PageRank [3,4]. Experimental results on the tested large LDBC SNB data [5] demonstrate that substantial improvements in practice.
+CGraphIndex supports fundamental and navigational operations on the structures and on the properties in constant time, supports fast property extraction on vertices and edges, and efficiently supports typical interactive complex and business intelligence queries [2,3], as well as BFS and PageRank [4,5]. Experimental results on the tested large LDBC SNB data [6] demonstrate that substantial improvements in practice.
 
 ## 1. Compile and Build
 
@@ -15,10 +15,10 @@ CGraphIndex supports fundamental and navigational operations on the structures a
 
 ### 1.2 Third-party dependencies
 
- - oneTBB [6] and  OpenMP [7] : for parallel primitive and to support multithreading
- - BBHash [8] : for vertex ID remapping
- - pSAscan [9] : for building suffix arrays in external memory
- - divsufsort [10] : for building suffix arrays in memory
+ - oneTBB [7] and  OpenMP [8] : for parallel primitive and to support multithreading
+ - BBHash [9] : for vertex ID remapping
+ - pSAscan [10] : for building suffix arrays in external memory
+ - divsufsort [11] : for building suffix arrays in memory
 
 BBHash, pSAscan and divsufsort have been placed in the **CGraphIndex/deps** directory in source code form. OpenMP and oneTBB need to be installed by the user and make CMake be able to find the corresponding configuration files. OpenMP is typically installed with common compiler toolchains such as GCC. For oneTBB, you can install it via a package manager or an installer script available at  [onetbb-install](https://www.intel.com/content/www/us/en/docs/onetbb/get-started-guide/2021-12/install-on-linux-os.html) .
 
@@ -154,23 +154,24 @@ Different from the substitution_parameter generated in LDBC that uses | The form
 where **filename** is the input file to be processed.
 
 ## References
+[1] Hongwei Huo, Yongze Yu, Zongtao He, and Jeffrey Scott Vitter, Indexing Labeled Property Multidigraphs in Entropy Space, With Applications, 2024. https://github.com/Hongweihuo-Lab/CGraphIndex
 
-[1] Orri Erling et al., The LDBC Social Network Benchmark: Interactive Workload, In SIGMOD, pages 619–630, 2015. https://doi.org/10.1145/2723372.2742786
+[2] Orri Erling et al., The LDBC Social Network Benchmark: Interactive Workload, In SIGMOD, pages 619–630, 2015. https://doi.org/10.1145/2723372.2742786
 
-[2] Szárnyas et al., The LDBC Social Network Benchmark: Business Intelligence Workload. PVLDB 16(4): 877–890, 2022. https://doi.org/10.14778/3574245.3574270
+[3] Szárnyas et al., The LDBC Social Network Benchmark: Business Intelligence Workload. PVLDB 16(4): 877–890, 2022. https://doi.org/10.14778/3574245.3574270
 
-[3]  Lawrence Page and Sergey Brin and Rajeev Motwani and Terry Winograd, The PageRank Citation Ranking: Bringing Order to the Web, The Web Conference, 1999. https://api.semanticscholar.org/CorpusID:1508503     
+[4]  Lawrence Page and Sergey Brin and Rajeev Motwani and Terry Winograd, The PageRank Citation Ranking: Bringing Order to the Web, The Web Conference, 1999. https://api.semanticscholar.org/CorpusID:1508503     
 
-[4]  Iosup et al., The LDBC Graphalytics Benchmark, 2023. https://arxiv.org/abs/2011.15028  
+[5]  Iosup et al., The LDBC Graphalytics Benchmark, 2023. https://arxiv.org/abs/2011.15028  
 
-[5] The LDBC Social Network Benchmark, 2024. https://arxiv.org/abs/2001.02299
+[6] The LDBC Social Network Benchmark, 2024. https://arxiv.org/abs/2001.02299
 
-[6] oneTBB, https://github.com/oneapi-src/oneTBB
+[7] oneTBB, https://github.com/oneapi-src/oneTBB
 
-[7] OpenMP, https://github.com/OpenMP
+[8] OpenMP, https://github.com/OpenMP
 
-[8] Antoine Limasset, Guillaume Rizk, Rayan Chikhi, and Pierre Peterlongo, Fast and Scalable Minimal Perfect Hashing for Massive Key Sets, In SEA, pages 25:1–25:16, 2017. https://doi.org/10.4230/LIPIcs.SEA.2017.25
+[9] Antoine Limasset, Guillaume Rizk, Rayan Chikhi, and Pierre Peterlongo, Fast and Scalable Minimal Perfect Hashing for Massive Key Sets, In SEA, pages 25:1–25:16, 2017. https://doi.org/10.4230/LIPIcs.SEA.2017.25
 
-[9] Juha Kärkkäinen, Dominik Kempa, and Simon J. Puglisi, Parallel External Memory Suffix Sorting, In CPM, pages 329--342, 2015. https://doi.org/10.1007/978-3-319-19929-0_28
+[10] Juha Kärkkäinen, Dominik Kempa, and Simon J. Puglisi, Parallel External Memory Suffix Sorting, In CPM, pages 329--342, 2015. https://doi.org/10.1007/978-3-319-19929-0_28
 
-[10] Yuta Mori, A lightweight suffix-sorting library, 2008. https://github.com/y-256/libdivsufsort/
+[11] Yuta Mori, A lightweight suffix-sorting library, 2008. https://github.com/y-256/libdivsufsort/
