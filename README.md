@@ -157,7 +157,7 @@ Different from the substitution_parameter generated in LDBC that uses | The form
 where **filename** is the input file to be processed.
 
 ## References
-[1] Hongwei Huo, Yongze Yu, Zongtao He, and Jeffrey Scott Vitter, Indexing Labeled Property Multidigraphs in Entropy Space, With Applications, 2025. \url{https://github.com/Hongweihuo-Lab/CGraphIndex}
+[1] Hongwei Huo, Yongze Yu, Zongtao He, and Jeffrey Scott Vitter, Indexing Labeled Property Multidigraphs in Entropy Space, With Applications, February 2025. 
 
 [2] Orri Erling et al., The LDBC Social Network Benchmark: Interactive Workload, In SIGMOD, pages 619–630, 2015. https://doi.org/10.1145/2723372.2742786
 
